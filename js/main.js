@@ -443,3 +443,34 @@ document.addEventListener("DOMContentLoaded", () => {
   observeNewReveals(grid);
 })();
 
+// ===============================
+// NAV ACTIVE LINK ON SCROLL
+// ===============================
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav2");
+
+const navObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+
+      const id = entry.target.getAttribute("id");
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${id}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+  },
+  {
+    root: null,
+    rootMargin: "-40% 0px -50% 0px",
+    threshold: 0
+  }
+);
+
+sections.forEach((section) => {
+  navObserver.observe(section);
+});

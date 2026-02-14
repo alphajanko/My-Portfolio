@@ -75,34 +75,59 @@
   <div class="fixed inset-0 -z-10 bg-grid-light bg-[size:24px_24px] opacity-30"></div>
   <div class="fixed inset-0 -z-20 bg-hero-blur"></div>
 
-  <!-- HEADER -->
-  <header class="sticky top-0 z-40 backdrop-blur-lg bg-brand-900/80 border-b border-brand-700/40">
+<!-- HEADER -->
+<header class="sticky top-0 z-40">
+  <div class="backdrop-blur-xl bg-brand-900/70 border-b border-brand-700/40">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 lg:px-8">
-      <div class="flex items-center gap-3">
-        <div class="h-12 w-12 rounded-2xl bg-accent-500/20 ring-2 ring-accent-500/60 flex items-center justify-center">
-          <span class="text-2xl font-heading text-accent-300">AS</span>
-        </div>
-        <div>
-          <p class="text-sm uppercase tracking-[0.25em] text-brand-300">Data Analyst & Cybersecurity Engineer</p>
-          <p class="text-lg font-semibold text-white">Athul Sunil</p>
-        </div>
-      </div>
 
-      <button id="mobile-menu-toggle" class="lg:hidden rounded-xl border border-brand-600 px-3 py-2 text-brand-200">
+      <!-- LEFT: Clean brand -->
+      <a href="#about" class="flex items-center gap-3 group">
+  <div class="h-11 w-11 rounded-2xl bg-accent-500/10 ring-1 ring-accent-500/40 flex items-center justify-center transition group-hover:ring-accent-500/70">
+    <span class="text-lg font-heading text-accent-200">AS</span>
+  </div>
+
+  <div class="leading-tight">
+    <!-- NAME -->
+    <p class="text-base font-semibold text-white">
+      Athul Sunil
+    </p>
+
+    <!-- PRIMARY ROLE -->
+    <p class="mt-1 text-sm font-medium text-accent-300">
+      Data Analyst | Cyber Risk & Security Engineering
+    </p>
+
+    <!-- OPTIONAL SUB-SPECIALIZATION (smaller line) -->
+    <p class="text-xs text-brand-400 mt-1 hidden md:block">
+      Data Governance • Secure Systems • Threat Management
+    </p>
+  </div>
+</a>
+
+
+      <!-- Mobile -->
+      <button id="mobile-menu-toggle"
+        class="lg:hidden rounded-xl border border-brand-600 bg-brand-900/40 px-3 py-2 text-brand-200 hover:border-accent-500/60 transition">
         <i class="fas fa-bars"></i>
       </button>
 
-      <div id="primary-menu" class="hidden lg:flex gap-8 text-sm text-brand-300">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#certifications" class="nav-link">Certifications</a>
-        <a href="#contact" class="nav-link">Contact</a>
+      <!-- RIGHT: Minimal nav like the example -->
+      <div id="primary-menu"
+        class="hidden lg:flex items-center gap-8 text-sm text-brand-300">
+
+           <a href="#about" class="nav2">Home</a>
+<a href="#experience" class="nav2">Experience</a>
+<a href="#projects" class="nav2">Projects</a>
+<a href="#education" class="nav2">Education</a>
+<a href="#certifications" class="nav2">Certifications</a>
+<a href="#contact" class="nav2 nav-cta">Contact</a>
+
       </div>
+
     </nav>
-  </header>
+  </div>
+</header>
+
 
   <!-- MAIN -->
   <main class="mx-auto w-full max-w-7xl px-4 lg:px-8">
