@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base target="_self">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athul Sunil | Resume</title>
+
+  <!-- Fonts (same vibe as index) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind config (same as index) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              "900": "#0f172a",
+              "800": "#1e293b",
+              "700": "#1f3d7a",
+              "600": "#334155",
+              "500": "#475569",
+              "400": "#64748b",
+              "300": "#cbd5f5",
+              "200": "#e2e8f0",
+              "100": "#f8fafc"
+            },
+            accent: {
+              "500": "#38bdf8",
+              "400": "#7dd3fc",
+              "300": "#bae6fd",
+              "200": "#e0f2fe"
+            },
+            highlight: "#facc15"
+          },
+          fontFamily: {
+            heading: ["Space Grotesk", "sans-serif"],
+            body: ["Inter", "sans-serif"]
+          },
+          boxShadow: {
+            glow: "0 25px 50px -12px rgba(56, 189, 248, 0.35)",
+            inset: "inset 0 1px 0 rgba(255, 255, 255, 0.06)"
+          },
+          backgroundImage: {
+            "grid-light": "linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px)",
+            "hero-blur": "radial-gradient(circle at 20% 20%, rgba(61, 193, 255, 0.35), transparent 45%), radial-gradient(circle at 80% 0%, rgba(250, 204, 21, 0.22), transparent 55%)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="min-h-screen bg-brand-900 text-brand-100 font-body antialiased">
+
+  <!-- Background (same as index) -->
+  <div class="fixed inset-0 -z-10 bg-grid-light bg-[size:24px_24px] opacity-30"></div>
+  <div class="fixed inset-0 -z-20 bg-hero-blur"></div>
+
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-40 backdrop-blur-lg bg-brand-900/80 border-b border-brand-700/40">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 lg:px-8">
+
+      <!-- Left -->
+      <div class="flex items-center gap-3">
+        <div class="h-11 w-11 rounded-2xl bg-accent-500/20 ring-2 ring-accent-500/60 flex items-center justify-center">
+          <span class="text-xl font-heading text-accent-300">AS</span>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-[0.25em] text-brand-300">Resume</p>
+          <p class="text-lg font-semibold text-white">Athul Sunil</p>
+        </div>
+      </div>
+
+      <!-- Right actions -->
+      <div class="flex items-center gap-3">
+        <a href="index.html"
+           class="inline-flex items-center gap-2 rounded-xl border border-brand-600 px-4 py-2 text-sm font-semibold text-brand-200 transition hover:border-accent-500 hover:text-white">
+          <i class="fa-solid fa-arrow-left text-xs"></i>
+          Back to Portfolio
+        </a>
+
+        <a href="assets/athul-sunil-cv.pdf" download
+           class="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-4 py-2 text-sm font-semibold text-brand-900 transition hover:bg-accent-400 hover:shadow-glow">
+          <i class="fa-solid fa-download text-sm"></i>
+          Download PDF
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="mx-auto w-full max-w-6xl px-4 py-12 lg:px-8">
+
+    <!-- Header content row -->
+    <section class="mb-10 grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+
+      <!-- Left: intro -->
+      <div class="rounded-3xl border border-brand-700/50 bg-brand-900/60 p-8">
+        <p class="text-xs uppercase tracking-[0.25em] text-accent-200">Résumé</p>
+        <h1 class="mt-3 font-heading text-3xl font-semibold text-white md:text-4xl">
+          Download or preview my CV
+        </h1>
+        <p class="mt-4 text-brand-200 leading-7">
+          A concise view of my experience across <span class="text-white font-semibold">data analytics</span>,
+          <span class="text-white font-semibold">cyber risk</span>, and building <span class="text-white font-semibold">audit-ready pipelines</span>
+          using PySpark, SQL, and Python.
+        </p>
+
+        <!-- Quick chips -->
+        <div class="mt-6 flex flex-wrap gap-3 text-sm">
+          <span class="rounded-full border border-brand-700 bg-brand-800/60 px-4 py-2 text-brand-200">PySpark • SQL • Python</span>
+          <span class="rounded-full border border-brand-700 bg-brand-800/60 px-4 py-2 text-brand-200">Audit • Risk • Governance</span>
+          <span class="rounded-full border border-brand-700 bg-brand-800/60 px-4 py-2 text-brand-200">MSc Cyber Security</span>
+        </div>
+      </div>
+
+      <!-- Right: profile card -->
+      <aside class="rounded-3xl border border-brand-700/50 bg-brand-900/60 p-8">
+        <p class="text-xs uppercase tracking-[0.25em] text-brand-400">Connect</p>
+
+        <div class="mt-4 flex items-center gap-4">
+          <div class="h-14 w-14 overflow-hidden rounded-2xl border border-brand-700 bg-brand-800/70">
+            <!-- put your small avatar image here (optional) -->
+            <img src="./images/athul.png" alt="Athul Sunil" class="h-full w-full object-cover">
+          </div>
+          <div>
+            <p class="text-lg font-semibold text-white">Athul Sunil</p>
+            <p class="text-sm text-brand-300">Data Analyst | Cyber Risk & Security</p>
+          </div>
+        </div>
+
+        <div class="mt-6 space-y-3 text-sm text-brand-200">
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-location-dot text-accent-300"></i>
+            <span>Nottingham, United Kingdom</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-envelope text-accent-300"></i>
+            <a class="hover:underline" href="mailto:athul.sunil118@gmail.com">athul.sunil118@gmail.com</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-phone text-accent-300"></i>
+            <a class="hover:underline" href="tel:+447587471523">+44 7587 471523</a>
+          </div>
+        </div>
+
+        <a href="https://www.linkedin.com/in/athulsunil" target="_blank" rel="noopener"
+           class="mt-6 inline-flex w-full items-center justify-center gap-3 rounded-xl border border-accent-500/60 bg-accent-500/10 px-5 py-3 text-sm font-semibold text-accent-200 transition hover:border-accent-500 hover:text-white hover:shadow-glow">
+          <i class="fa-brands fa-linkedin text-lg"></i>
+          View LinkedIn Profile
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+        </a>
+
+        <p class="mt-5 text-xs text-brand-400">
+          Tip: If the preview doesn't load, use “Download PDF”.
+        </p>
+      </aside>
+    </section>
+
+    <!-- PDF Viewer -->
+    <section class="rounded-3xl border border-brand-700/50 bg-brand-900/60 p-6 lg:p-8">
+      <div class="mb-4 flex items-center justify-between">
+        <p class="text-xs uppercase tracking-[0.25em] text-brand-400">Preview</p>
+        <div class="flex items-center gap-3">
+          <a href="assets/athul-sunil-cv.pdf" target="_blank"
+             class="inline-flex items-center gap-2 rounded-xl border border-brand-600 px-4 py-2 text-sm text-brand-200 transition hover:border-accent-500 hover:text-white">
+            Open in New Tab <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="w-full h-[800px] overflow-hidden rounded-2xl border border-brand-700 bg-brand-800/50">
+        <iframe
+          src="assets/athul-sunil-cv.pdf"
+          title="Athul Sunil Resume PDF"
+          class="h-full w-full"
+        ></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-brand-800/70 bg-brand-900/80">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-center text-sm text-brand-400 lg:px-8">
+      &copy; <span id="current-year"></span> Athul Sunil. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

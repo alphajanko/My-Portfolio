@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base target="_self">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Athul Sunil | Data Analyst & Cybersecurity Professional</title>
+  <meta name="description" content="Portfolio of Athul Sunil — Data Analyst and Cybersecurity professional skilled in SQL, Python, PySpark, AI/ML projects, and data governance." />
+  <meta name="keywords" content="Athul Sunil, Data Analyst, Cybersecurity, SQL, Python, PySpark, AI, Machine Learning, Portfolio" />
+  <meta name="author" content="Athul Sunil" />
+
+  <link rel="canonical" href="https://athulsunil.dev" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://picsum.photos/32?random=99" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              "900": "#0f172a",
+              "800": "#1e293b",
+              "700": "#1f3d7a",
+              "600": "#334155",
+              "500": "#475569",
+              "400": "#64748b",
+              "300": "#cbd5f5",
+              "200": "#e2e8f0",
+              "100": "#f8fafc"
+            },
+            accent: {
+              "500": "#38bdf8",
+              "400": "#7dd3fc",
+              "300": "#bae6fd",
+              "200": "#e0f2fe"
+            },
+            highlight: "#facc15"
+          },
+          fontFamily: {
+            heading: ["Space Grotesk", "sans-serif"],
+            body: ["Inter", "sans-serif"]
+          },
+          boxShadow: {
+            glow: "0 25px 50px -12px rgba(56, 189, 248, 0.35)",
+            inset: "inset 0 1px 0 rgba(255, 255, 255, 0.06)"
+          },
+          backgroundImage: {
+            "grid-light":
+              "linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px)",
+            "hero-blur":
+              "radial-gradient(circle at 20% 20%, rgba(61, 193, 255, 0.35), transparent 45%), radial-gradient(circle at 80% 0%, rgba(250, 204, 21, 0.22), transparent 55%)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="min-h-screen bg-brand-900 text-brand-100 font-body antialiased">
+
+  <div class="fixed inset-0 -z-10 bg-grid-light bg-[size:24px_24px] opacity-30"></div>
+  <div class="fixed inset-0 -z-20 bg-hero-blur"></div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 backdrop-blur-lg bg-brand-900/80 border-b border-brand-700/40">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 lg:px-8">
+      <div class="flex items-center gap-3">
+        <div class="h-12 w-12 rounded-2xl bg-accent-500/20 ring-2 ring-accent-500/60 flex items-center justify-center">
+          <span class="text-2xl font-heading text-accent-300">AS</span>
+        </div>
+        <div>
+          <p class="text-sm uppercase tracking-[0.25em] text-brand-300">Data Analyst & Cybersecurity Engineer</p>
+          <p class="text-lg font-semibold text-white">Athul Sunil</p>
+        </div>
+      </div>
+
+      <button id="mobile-menu-toggle" class="lg:hidden rounded-xl border border-brand-600 px-3 py-2 text-brand-200">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div id="primary-menu" class="hidden lg:flex gap-8 text-sm text-brand-300">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="mx-auto w-full max-w-7xl px-4 lg:px-8">
+
+    <!-- ABOUT / HERO -->
+    <section id="about" class="mb-24 mt-10">
+      <div class="relative overflow-hidden rounded-3xl border border-brand-700/50 bg-brand-900/60 px-6 py-14 lg:px-20 lg:py-24">
+        <div class="pointer-events-none absolute -left-24 -top-24 h-80 w-80 rounded-full bg-accent-500/20 blur-3xl"></div>
+        <div class="pointer-events-none absolute -right-24 -bottom-24 h-80 w-80 rounded-full bg-highlight/10 blur-3xl"></div>
+
+        <div class="grid items-center gap-16 lg:grid-cols-2">
+          <div class="space-y-6">
+            <p class="text-sm font-semibold tracking-wide text-brand-200 reveal">
+              Hello<span class="text-highlight">.</span>
+            </p>
+
+            <h1 class="font-heading text-4xl font-semibold leading-[1.2] md:text-5xl lg:text-6xl reveal">
+              I'm <span class="text-accent-300">Athul Sunil</span><br />
+              <span class="text-white">Data Analyst</span>
+              <span class="text-brand-300">|</span>
+              <span class="text-white">Cyber Risk & Security Engineering</span>
+            </h1>
+
+            <p class="max-w-2xl text-base leading-8 text-brand-200 md:text-lg reveal">
+              Data Analyst building audit-ready pipelines with
+              <span class="text-white font-semibold">PySpark, SQL, Python</span>.
+              Focused on secure handling, risk controls, and anomaly detection across financial datasets.
+            </p>
+
+            <div class="reveal flex flex-wrap items-center gap-3 text-sm">
+              <span class="rounded-full border border-brand-700 bg-brand-800/60 px-4 py-2 text-brand-200">
+                Focus: Data Analytics • Cyber Risk • Secure Systems
+              </span>
+
+              <span class="rounded-full border border-accent-500/40 bg-accent-500/10 px-4 py-2 text-accent-200">
+                Specialising in: <span id="typing-role" class="typing text-white font-semibold"></span>
+              </span>
+            </div>
+
+            <div class="reveal flex flex-wrap gap-3 pt-2 text-sm">
+              <span class="rounded-full border border-brand-700 bg-brand-800/60 px-4 py-2 text-brand-200">
+                PySpark • SQL • Python
+              </span>
+              <span class="rounded-full border border-brand-700 bg-brand-800/60 px-4 py-2 text-brand-200">
+                Audit & Risk • Data Governance
+              </span>
+              <span class="rounded-full border border-brand-700 bg-brand-800/60 px-4 py-2 text-brand-200">
+                Secure Data Handling • Controls
+              </span>
+            </div>
+
+            <div class="reveal flex flex-wrap gap-4 pt-4">
+              <a href="#contact"
+                 class="nav-link btn-primary inline-flex items-center justify-center rounded-xl bg-accent-500 px-6 py-3 text-sm font-semibold text-brand-900 transition hover:bg-accent-400 hover:shadow-glow">
+                Got a project?
+                <i class="fa-solid fa-arrow-right ml-3 text-xs"></i>
+              </a>
+
+              <a href="resume.html" target="_blank" rel="noopener"
+                 class="nav-link btn-outline inline-flex items-center justify-center rounded-xl border border-brand-600 bg-brand-900/40 px-6 py-3 text-sm font-semibold text-brand-100 transition hover:border-accent-500 hover:text-white">
+                View Resume
+                <i class="fa-solid fa-file-lines ml-3 text-xs text-brand-300"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="relative flex justify-center lg:justify-end">
+            <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
+              <div class="ring ring-1"></div>
+              <div class="ring ring-2"></div>
+            </div>
+
+            <div class="reveal relative z-10 w-[280px] overflow-hidden rounded-3xl border border-brand-700 bg-brand-800/70 p-3 shadow-[0_35px_60px_-20px_rgba(15,23,42,0.75)]">
+              <img src="./images/Athul_about.png" alt="Athul Sunil portrait"
+                   class="h-[360px] w-full rounded-2xl object-cover" loading="lazy" />
+              <div class="mt-4 rounded-2xl border border-brand-700 bg-brand-900/60 p-5">
+                <p class="text-base font-semibold text-white italic leading-relaxed">
+                  “Precision in data. Discipline in security.”
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="mb-24">
+      <div class="mb-10">
+        <p class="text-xs uppercase tracking-[0.4em] text-brand-400">EXPERIENCE</p>
+        <h2 class="mt-3 text-4xl font-heading text-white">Professional Background</h2>
+        <div class="mt-6 h-px w-full bg-brand-700/60"></div>
+      </div>
+
+      <div id="experience-timeline" class="relative"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mb-24">
+      <h2 class="text-3xl font-heading text-white mb-10">Skills</h2>
+      <div id="skills-grid" class="grid gap-6 lg:grid-cols-3"></div>
+    </section>
+
+<!-- PROJECTS -->
+<section id="projects" class="mb-24">
+  <div class="mb-10 text-center">
+    <h2 class="text-4xl font-heading text-white">My Works</h2>
+    <p class="mx-auto mt-4 max-w-xl text-sm text-brand-300">
+      A curated selection of analytics and security projects — built for real-world impact.
+    </p>
+  </div>
+
+  <!-- Proper wrapper (NO arrows) -->
+  <div class="relative rounded-3xl border border-brand-700 bg-brand-900/40 p-6">
+    <div id="projects-carousel" class="grid gap-6 md:grid-cols-3">
+      <!-- JS inserts cards -->
+    </div>
+  </div>
+</section>
+
+    <!-- EDUCATION -->
+<section id="education" class="mb-24">
+  <div class="mb-10">
+    <p class="text-xs uppercase tracking-[0.4em] text-brand-400">EDUCATION</p>
+    <h2 class="mt-3 text-4xl font-heading text-white">Academic Background</h2>
+    <div class="mt-6 h-px w-full bg-brand-700/60"></div>
+  </div>
+
+  <div id="education-list" class="grid gap-6 md:grid-cols-2"></div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="mb-24">
+  <div class="mb-10">
+    <p class="text-xs uppercase tracking-[0.4em] text-brand-400">CERTIFICATIONS</p>
+    <h2 class="mt-3 text-4xl font-heading text-white">Credentials</h2>
+    <div class="mt-6 h-px w-full bg-brand-700/60"></div>
+  </div>
+
+  <div id="certifications-grid" class="grid gap-6 md:grid-cols-2"></div>
+</section>
+
+
+    <!-- CONTACT -->
+<section id="contact" class="mb-24">
+  <h2 class="text-3xl font-heading text-white mb-6">Contact</h2>
+
+  <div class="rounded-3xl border border-brand-700 bg-brand-800/60 p-8">
+    <div class="grid gap-10 lg:grid-cols-2">
+
+      <!-- LEFT -->
+      <div>
+        <p class="text-brand-200 text-sm leading-7">
+          Want to work together or discuss an opportunity?
+          Reach out and I’ll respond quickly.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a class="contact-btn"
+             href="mailto:athulsunil.dev@gmail.com?subject=Portfolio%20Inquiry">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
+
+          <a class="contact-btn"
+             href="https://www.linkedin.com/in/YOUR_USERNAME/"
+             target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+
+          <a class="contact-btn"
+             href="https://github.com/YOUR_USERNAME"
+             target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="space-y-6 text-sm text-brand-300">
+        <div>
+          <p class="text-xs uppercase tracking-[0.3em] text-brand-400">Location</p>
+          <p class="mt-2 text-white font-medium">United Kingdom , United Arab Emirates</p>
+        </div>
+
+        <div>
+          <p class="text-xs uppercase tracking-[0.3em] text-brand-400">Availability</p>
+          <p class="mt-2 text-white font-medium">Open to Data & Cyber Roles</p>
+        </div>
+
+        <div>
+          <p class="text-xs uppercase tracking-[0.3em] text-brand-400">Response Time</p>
+          <p class="mt-2 text-white font-medium">Within 24 hours</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-brand-800/70 bg-brand-900/80 py-8 text-center text-brand-400">
+    <p>&copy; <span id="current-year"></span> Athul Sunil. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
